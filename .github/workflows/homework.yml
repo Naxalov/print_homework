@@ -11,8 +11,8 @@ jobs:
       - name: Checkout the repository
         uses: actions/checkout@v2
         with:
-          repository: codeschooluz/print_test
-          token: ${TEST_KEY}
+          repository: codeschooluz/print_test          
+          token: ${secrets.TEST_KEY}
           path: test
       - name: Install dependencies
         uses: actions/setup-python@v2
